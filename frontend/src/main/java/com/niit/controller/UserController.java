@@ -42,7 +42,7 @@ public class UserController {
 			role.setContactNumber(user.getContactNumber());
 
 			user.setRole(role);
-			role.setUser(user);
+			role.setUser(user);	
 
 			UserDao.saveOrUpdate(user);
 			RoleDao.saveOrUpdate(role);
@@ -51,7 +51,7 @@ public class UserController {
 		}
 		model.addAttribute("message", message);
 		model.addAttribute("loginButtonClicked", true);
-		return "login";
+		return "index";
 
 	}
 	
