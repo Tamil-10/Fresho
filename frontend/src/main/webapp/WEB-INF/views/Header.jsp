@@ -93,6 +93,14 @@ margin-right:10px;
   <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
       <li><a href="index">Home</a></li>
+      <c:if test="${pageContext.request.userPrincipal.name==null }">
+							<li><a href="displayartist" id="page">Supplier</a></li>
+							<li><a href="albums" id="page">Products</a></li>
+							</c:if>
+							<security:authorize access="hasRole('ROLE_USER')">
+							<li><a href="displayartist" id="page">Supplier</a></li>
+							<li><a href="albums" id="page">Products</a></li>
+							</security:authorize>
       <security:authorize access="hasRole('ROLE_ADMIN')">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
         <ul class="dropdown-menu">

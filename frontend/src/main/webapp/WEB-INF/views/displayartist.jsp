@@ -6,7 +6,6 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style type="text/css">
 <style type="text/css">
 .container1 {
 	background: transparent;
@@ -69,8 +68,8 @@ background: threedlightshadow;
 color: black;
 font-size: x-large;
 font-family: fantasy;
-margin-top: 5px;
-margin-bottom: 5px;
+margin-top: 5px; 
+margin-bottom: 5px; 
 }
 .Latest{
 padding-top: 10px;
@@ -87,30 +86,22 @@ body {
 </head>
 <body>
 <%@ include file="Header.jsp"%>
-<c:if test="${not empty DisplayByFeatured}">
 		<div id="albums" class="col-sm-12">
-			<p class="Latest">Featured Products</p>
+			<p class="Latest">Supplier</p>
 	</div>
-</c:if>
-<c:if test="${empty DisplayByFeatured}">
-		<div id="albums" class="col-sm-12">
-			<p class="Latest">Products</p>
-	</div>
-</c:if>
-<c:forEach items="${product}" var="product" varStatus="status">
+  <c:forEach items="${supplierList}" var="supplier" varStatus="status">
 <div class="col-sm-2">
 					<div id="f1_container1">
 						<div id="f1_card1" class="shadow">
 							<div class="front face">
-								<img class="alb" src="resources/product/${product.productId}.jpg" />
+								<img class="alb" src="resources/Supplier/${supplier.supplierId}.jpg" />
 							</div>
 							<div class="back face center">
-								<p class="proname">${product.productName}</p>
-								<p class="proprice">&#36; ${product.price}</p>
-								<p><a href="productdescription?productId=${product.productId}"><button type="submit" class="btn btn-warning btn-md"><span class="glyphicon glyphicon-eye-open"></span>View</button></a></p>
+								<p class="proname">${supplier.supplierName}</p>
+								<p><a href="displayproduct?suppliername=${supplier.supplierName}"><button type="submit" class="btn btn-warning btn-md"><span class="glyphicon glyphicon-eye-open"></span>View</button></a></p>
 							</div>
 						</div>
 					</div>
 				</div>
-				</c:forEach>
+  </c:forEach>
 </body>
