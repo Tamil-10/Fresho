@@ -32,7 +32,9 @@ public class Product {
 
 	@Transient
 	private MultipartFile image;
-
+	
+	private String featured;
+	
 	public int getProductId() {
 		return productId;
 	}
@@ -96,6 +98,13 @@ public class Product {
 	public void setImage(MultipartFile image) {
 		this.image = image;
 	}
+	
+	public String getFeatured() {
+		return featured;
+	}
 
+	public void setFeatured(String featured) {
+		this.featured = featured;
+	}
 
 }
