@@ -98,13 +98,33 @@ public class ProductController {
 	public String ProductDescription(@RequestParam ("productId") int productId, Model model){
 		Product product = ProductDao.getByProductId(productId);
 		model.addAttribute("product", product);
+		if(product.getStock() == 0)
+		{
+			model.addAttribute("OutofStock", true);
+		}
 		return "productdescription";
 	}
 	
-	/*@RequestMapping("displayproduct")
+	@RequestMapping("displayproduct")
 	public String ProductDisplay(@RequestParam ("suppliername") String suppliername, Model model){
 		List<Product> product = ProductDao.getBySupplierName(suppliername);
 		model.addAttribute("product", product);
 		return "displayproduct";
+	}
+	@RequestMapping("albums")
+	public String albums( Model model){
+		List<Product> product = ProductDao.list();
+		model.addAttribute("product", product);
+		return "displayproduct";
+	}
+	
+	/*@RequestMapping("search")
+	public ModelAndView search(@RequestParam ("searchTerm") String search, Model model){
+		ModelAndView mv = new ModelAndView("search");
+		List<Product> album = productDao.getByAlbumName(search);
+		List<Product> product = productDao.getBySupplierName(search);
+		mv.addObject("album", album);
+		mv.addObject("product", product);
+		return mv;
 	}*/
 }
