@@ -15,4 +15,8 @@ public interface ProductDAO {
 	public void saveOrUpdate(Product product);
 	
 	public void delete(int product_id);
+
+	public List<Product> getBySupplierName(String suppliername);
+
+	public List<Product> getByFeatured();
 }
