@@ -92,7 +92,13 @@ margin-right:10px;
   
   <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
+       <c:if test="${pageContext.request.userPrincipal.name != null }">
+                               
+                                <li><a href="index">Home</a></li>
+                                </c:if>
+    <c:if test="${pageContext.request.userPrincipal.name == null }">
       <li><a href="index">Home</a></li>
+       </c:if>
       <c:if test="${pageContext.request.userPrincipal.name==null }">
 							<li><a href="displayartist" id="page">Supplier</a></li>
 							<li><a href="albums" id="page">Products</a></li>
@@ -160,7 +166,16 @@ margin-right:10px;
       <c:if test="${pageContext.request.userPrincipal.name!=null }">
 									<li id="right"><security:authorize access="hasRole('ROLE_USER')">
 					<li><a href="#">Hi ${pageContext.request.userPrincipal.name}!!</a></li>
+					
+					<li><a href="myCart"><span
+									class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+									<li><a href="History"><span
+									class="glyphicon glyphicon-list"></span> Orders</a></li>
+					</security:authorize><security:authorize access="hasRole('ROLE_ADMIN')">
+					<li><a href="admincart"><span
+									class="glyphicon glyphicon-list-alt"></span> Orders</a></li>
 					</security:authorize></li>
+					
 					<c:url value="/logout" var="logout"></c:url>
 							<li id="right"><a href="${logout}"><span
 									class="glyphicon glyphicon-log-out"></span> Logout</a></li>

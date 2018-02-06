@@ -28,10 +28,18 @@
  <h4 style="color:black;">&nbsp;&nbsp;&nbsp;Eat healthy, stay healthy</h4>
  
  <%@include file="Carousel.jsp" %>
- 
+ <c:if test="${pageContext.request.userPrincipal.name==null }">
+					<%@ include file="displayfeatured.jsp"%>
+					</c:if>
+					<c:if test="${pageContext.request.userPrincipal.name!=null }">
+					<security:authorize access="hasRole('ROLE_USER')">
+					<%@ include file="displayfeatured.jsp"%>
+					</security:authorize>
+					</c:if>
      
 </div>
  
 </body>
-<%@ include file="Footer.jsp"%>
+
 </html>
+<%-- <%@ include file="Footer.jsp"%> --%>
