@@ -111,6 +111,14 @@ public class ProductController {
 		model.addAttribute("product", product);
 		return "displayproduct";
 	}
+	
+/*	@RequestMapping("featured")
+	 	public String featured( Model model){
+	 		List<Product> product = ProductDao.getByFeatured();
+	 		model.addAttribute("product", product);
+	 		model.addAttribute("DisplayByFeatured", true);
+	 		return "displayproduct";
+	 	}*/
 	@RequestMapping("albums")
 	public String albums( Model model){
 		List<Product> product = ProductDao.list();

@@ -26,6 +26,14 @@ public class HomeController {
 		return "index";
 		
 	}
+	@RequestMapping("/index")
+	public String IndexPage(Model model) {
+		List<Product> product = ProductDao.getByFeatured();
+		model.addAttribute("product", product);
+		return "index";
+		
+	}
+	
 	@RequestMapping("/login")
 	public ModelAndView loginPage(@RequestParam(value = "error", required = false) String error,
 			@RequestParam(value = "logout", required = false) String logout,Model model) {
