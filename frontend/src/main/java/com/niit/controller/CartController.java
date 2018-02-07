@@ -194,7 +194,7 @@ public class CartController {
 		return "OrderPage";
 	}
 	
-	@RequestMapping("adminCart")
+	@RequestMapping("admincart")
 	public String adminCart(Model model){
 		List<Cart> list = CartDao.getAllItems();
 		for (Cart c : list) {
