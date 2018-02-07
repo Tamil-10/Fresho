@@ -16,11 +16,11 @@ display: inline;
 
 }
 
-.fa{
+/* .fa{
 
 margin-left: 10px;
 
-} 
+}  */
 footer {
   background: #C5F936;
   padding: 0px 0;
@@ -47,7 +47,7 @@ footer a:hover {
 <footer class="footer">
   <div class="container text-center">
   <small style="color:grey" class="copyright">Copyright &copy 2018 Fresho.,All Rights Reserved.</small>
-    <a href="#"><i class="fa fa-facebook" style="color: black;"></i></a>
+    <a href="#"><class=" icon fa fa-facebook" style="color: black;"></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-google-plus"></i></a>

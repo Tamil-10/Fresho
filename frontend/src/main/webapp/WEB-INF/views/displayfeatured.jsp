@@ -62,18 +62,22 @@ background: threedlightshadow;
 color: black;
 font-size: x-large;
 font-family: fantasy;
-margin-top: 5px; 
+margin-top: 0px; 
 margin-bottom: 5px; 
 }
 .Latest{
-padding-top: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
 }
 </style>
 </head>
 <body>
-		<div id="albums" class="col-sm-12">
-			<p class="Latest">Featured Products</p>
-	</div>
+		<!-- <div id="albums" class="col-sm-12"> -->
+			<p class="Latest">
+			<img src="resources/carousel/offer.jpg" style="width:100%; height:80px">
+			</p>
+	<!-- </div> -->
+	<br>
   <c:forEach items="${product}" var="product" varStatus="status">
 <div class="col-sm-2">
 					<div id="f1_container1">

@@ -32,12 +32,13 @@ body {
 	margin-bottom: 100px;
 }
 h5{
-	color: white;
+	color: blue;
 }
 </style>
 </head>
 <body>
 <%@ include file="Header.jsp"%>
+<br><br><br>
 <br><br><br>
 <div class="col-sm-offset-3 col-sm-3">
  <img id="pic"src="resources/product/${product.productId}.jpg" alt="${product.productId}">

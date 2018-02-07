@@ -52,14 +52,14 @@
 	  </div>
 
       <div class="item">
-        <img src="resources/carousel/img.jpg" style="width:100%; height:450px" >
+        <img src="resources/carousel/img5.jpg" style="width:100%; height:450px" >
 		<div class="fnt"><h2><font color="#ce3175">Collection of</font></h2>
 		<h3><font color="#ce3175">Luxury Watches</font></h3>
       </div>
       </div>
     
       <div class="item">
-        <img src="resources/carousel/img1.jpg" style="width:100%; height:450px">
+        <img src="resources/carousel/im.jpg" style="width:100%; height:450px">
       <div class="fnt"><h2><font color="#ce3175">Classic</font></h2>
 	  <h3><font color="#ce3175">Wall Clock</font></h3>
 	  </div>

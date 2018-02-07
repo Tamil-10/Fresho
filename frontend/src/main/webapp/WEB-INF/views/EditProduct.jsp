@@ -115,6 +115,12 @@ function isAlphabet(elem, helperMsg) {
     <div class="col-sm-3"> 
       <input type="text" class="form-control" name="stock" id="stock" placeholder="Enter Stock Number" required>
     </div>
+      <div class="form-group">
+    <label class="control-label col-sm-offset-2 col-sm-3" for="pwd">Featured:</label>
+    <div class="col-sm-3"> 
+      <div class="checkbox">
+  <label><input type="checkbox" name="featured"></label>
+</div>
   </div>
   <div class="form-group"> 
     <div class="col-sm-offset-5 col-sm-3">

@@ -27,7 +27,8 @@
  <br>
  <h4 style="color:black;">&nbsp;&nbsp;&nbsp;Eat healthy, stay healthy</h4>
  
- <%@include file="Carousel.jsp" %>
+ <%@include file="Carousel.jsp" %> 	
+ <br><br>
  <c:if test="${pageContext.request.userPrincipal.name==null }">
 					<%@ include file="displayfeatured.jsp"%>
 					</c:if>
@@ -36,10 +37,12 @@
 					<%@ include file="displayfeatured.jsp"%>
 					</security:authorize>
 					</c:if>
+					<br><br>
+	<%-- 				<%@ include file="Footer.jsp"%> --%>
      
 </div>
- 
+  	 	
 </body>
 
 </html>
-<%-- <%@ include file="Footer.jsp"%> --%>
+

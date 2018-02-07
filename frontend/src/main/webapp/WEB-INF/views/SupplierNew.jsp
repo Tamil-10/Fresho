@@ -83,7 +83,7 @@ function isNumeric(elem, helperMsg) {
     </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-sm-offset-2 col-sm-3" for="pwd">Image:</label>
+    <label class="control-label col-sm-offset-2 col-sm-3" for="password">Image:</label>
     <div class="col-sm-3"> 
       <input type="file" class="form-control" name="file" id="file" placeholder="File" required>
     </div>

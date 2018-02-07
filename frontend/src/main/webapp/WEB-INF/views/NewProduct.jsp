@@ -150,6 +150,12 @@ label{
     <div class="col-sm-3"> 
       <input type="file" class="form-control" name="file" id="file" placeholder="Enter Price Amount" required>
     </div>
+    <div class="form-group">
+    <label class="control-label col-sm-offset-2 col-sm-3" for="pwd">Featured:</label>
+    <div class="col-sm-3"> 
+      <div class="checkbox">
+  <label><input type="checkbox" name="featured"></label>
+</div>
   </div>
   <div class="form-group"> 
     <div class="col-sm-offset-5 col-sm-3">
