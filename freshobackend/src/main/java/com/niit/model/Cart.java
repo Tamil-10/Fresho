@@ -1,10 +1,14 @@
 package com.niit.model;
 
 
+import java.sql.Time;
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
 
 import org.springframework.stereotype.Component;
 
@@ -15,6 +19,9 @@ public class Cart {
 		
 	@Id
 	@GeneratedValue
+	private int itemId;
+	
+	private int cartId;
 	private int productId;
 	private String productName;
 	private int userId;
@@ -23,11 +30,27 @@ public class Cart {
 	private int price;
 	private int qty;
 	private int total;
-	private int days;
 	private String status;
 	private int shippingId;
-	private int cartId;
 	
+
+	@Temporal(javax.persistence.TemporalType.DATE)
+	private Date cuDate;
+	
+	
+	private Time time;
+	
+	@Temporal(javax.persistence.TemporalType.DATE)
+	private Date dDate;
+	
+	private int days;
+	
+	public int getItemId() {
+		return itemId;
+	}
+	public void setItemId(int itemId) {
+		this.itemId = itemId;
+	}
 	public int getCartId() {
 		return cartId;
 	}
@@ -100,5 +123,22 @@ public class Cart {
 	public void setShippingId(int shippingId) {
 		this.shippingId = shippingId;
 	}
-	
+	public Date getCuDate() {
+		return cuDate;
+	}
+	public void setCuDate(Date cuDate) {
+		this.cuDate = cuDate;
+	}
+	public Time getTime() {
+		return time;
+	}
+	public void setTime(Time time) {
+		this.time = time;
+	}
+	public Date getdDate() {
+		return dDate;
+	}
+	public void setdDate(Date dDate) {
+		this.dDate = dDate;
+	}
 }

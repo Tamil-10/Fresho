@@ -16,7 +16,7 @@ public interface ShippingaddressDAO {
 		
 		public Shippingaddress getByUserName(String username);
 		
-		public Shippingaddress getByUserId(int userid);
+		public List<Shippingaddress> getByUserId(int userid);
 		
 		public void saveOrUpdate(Shippingaddress shippingaddress);
 		

@@ -19,7 +19,8 @@ import com.niit.dao.CartDAO;
 import com.niit.dao.CategoryDAO;
 import com.niit.dao.ProductDAO;
 import com.niit.dao.RoleDAO;
-import com.niit.dao.ShippingaddressDAO;
+import com.niit.dao.ShipmentDAO;
+
 import com.niit.dao.SupplierDAO;
 import com.niit.dao.UserDAO;
 import com.niit.daoImpl.BillingaddressDAOImpl;
@@ -27,7 +28,8 @@ import com.niit.daoImpl.CartDAOImpl;
 import com.niit.daoImpl.CategoryDAOImpl;
 import com.niit.daoImpl.ProductDAOImpl;
 import com.niit.daoImpl.RoleDAOImpl;
-import com.niit.daoImpl.ShippingaddressDAOImpl;
+import com.niit.daoImpl.ShipmentDAOImpl;
+
 import com.niit.daoImpl.SupplierDAOImpl;
 import com.niit.daoImpl.UserDAOImpl;
 import com.niit.model.Billingaddress;
@@ -35,7 +37,7 @@ import com.niit.model.Cart;
 import com.niit.model.Category;
 import com.niit.model.Product;
 import com.niit.model.Role;
-import com.niit.model.Shippingaddress;
+import com.niit.model.Shipment;
 import com.niit.model.Supplier;
 import com.niit.model.User;
 
@@ -80,7 +82,7 @@ public class hiberConfig {
 		sessionBuilder.addAnnotatedClass(Billingaddress.class);
 		sessionBuilder.addAnnotatedClass(Cart.class);
 		sessionBuilder.addAnnotatedClass(Supplier.class);
-		sessionBuilder.addAnnotatedClass(Shippingaddress.class);
+		sessionBuilder.addAnnotatedClass(Shipment.class);
 		sessionBuilder.addAnnotatedClass(Role.class);
 		return sessionBuilder.buildSessionFactory();
 	}
@@ -129,9 +131,9 @@ public class hiberConfig {
 	}
 	
 	@Autowired(required = true)
-	@Bean(name = "ShippingaddressDAO")
-	public ShippingaddressDAO getShippingaddressDAO(SessionFactory sessionFactory) {
-		return new ShippingaddressDAOImpl(sessionFactory);
+	@Bean(name = "ShipmentDAO")
+	public ShipmentDAO getShipmentDAO(SessionFactory sessionFactory) {
+		return new ShipmentDAOImpl(sessionFactory);
 	}
 	@Autowired(required = true)
 	@Bean(name = "RoleDAO")

@@ -71,16 +71,12 @@ public class ShippingaddressDAOImpl implements ShippingaddressDAO {
 	}
 
 	@Transactional
-	public Shippingaddress getByUserId(int userid) {
-		String hql = "from Shippingaddress where UserId='" + userid + "'";
-		Query query = (Query) sessionFactory.getCurrentSession().createQuery(hql);
+	public List<Shippingaddress> getByUserId(int userid) {
+		String hql = "from Shipment where userId =" + "'" + userid + "'";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		@SuppressWarnings("unchecked")
-		List<Shippingaddress> listShippingaddress = (List<Shippingaddress>) (query).list();
-
-		if (listShippingaddress != null && !listShippingaddress.isEmpty()) {
-			return listShippingaddress.get(0);
-		}
-		return null;
+		List<Shippingaddress> list = (List<Shippingaddress>) query.list();
+		return list;	
 	}
 
 	@Transactional
