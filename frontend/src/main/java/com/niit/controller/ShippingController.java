@@ -147,7 +147,7 @@ public class ShippingController {
 				CartDao.saveOrUpdate(k);
 			}
 			int subtotal = 0;
-			int deliver= 50;
+			int deliver= 10;
 			for (Cart c: kart) {
 				subtotal = subtotal + (c.getQty() * c.getPrice());
 			}

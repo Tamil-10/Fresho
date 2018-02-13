@@ -56,5 +56,9 @@ public class HomeController {
 
 		return "signup";
 	}
+	@RequestMapping("/About")
+	public String aboutPage(Model model) {
 
+		return "About";
+	}
 }
