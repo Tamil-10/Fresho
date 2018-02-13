@@ -130,9 +130,9 @@ margin-right:10px;
         </ul>
       </li>
       </security:authorize>
-      <li><a href="#">About Us</a></li>
+      <li><a href="About">About Us</a></li>
     </ul>
-    <c:if test="${pageContext.request.userPrincipal.name==null }">
+   <%--  <c:if test="${pageContext.request.userPrincipal.name==null }">
    <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search here" name="search">
@@ -155,7 +155,7 @@ margin-right:10px;
         </div>
       </div>
     </form>
-    </security:authorize>
+    </security:authorize> --%>
     <ul class="nav navbar-nav navbar-right">
     <c:if test="${pageContext.request.userPrincipal.name==null }">
     <c:url value="/login" var="login"> </c:url>

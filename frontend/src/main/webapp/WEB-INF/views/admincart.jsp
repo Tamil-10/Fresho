@@ -140,8 +140,8 @@ color: blue;
 				<td style="text-align: center;">${cartitem.productName}</td>
 				<td style="text-align: center;">${cartitem.cuDate}</td>
 				<td style="text-align: center;">${cartitem.qty}</td>
-				<td style="text-align: center;">&#36;${cartitem.price}</td>
-				<td style="text-align: center;">&#36;${cartitem.total}</td>
+				<td style="text-align: center;">&#8377;${cartitem.price}</td>
+				<td style="text-align: center;">&#8377;${cartitem.total}</td>
 				<td style="text-align: center;">${cartitem.dDate}</td>				
 				<c:if test="${cartitem.days>=3}">
 					<td style="text-align: center; color:#ff9000;">Shipped</td>

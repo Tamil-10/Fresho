@@ -106,7 +106,7 @@ body {
 							</div>
 							<div class="back face center">
 								<p class="proname">${product.productName}</p>
-								<p class="proprice">&#36; ${product.price}</p>
+								<p class="proprice">&#8377; ${product.price}</p>
 								<p><a href="productdescription?productId=${product.productId}"><button type="submit" class="btn btn-warning btn-md"><span class="glyphicon glyphicon-eye-open"></span>View</button></a></p>
 							</div>
 						</div>

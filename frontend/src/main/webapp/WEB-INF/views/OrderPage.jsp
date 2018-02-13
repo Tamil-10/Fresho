@@ -140,8 +140,8 @@ margin-bottom: 150px;
 					<td>${status.count}</td>
 					<td style="text-align: center;">${cartitem.productName}</td>
 					<td style="text-align: center;">${cartitem.qty}</td>				
-					<td style="text-align: center;">&#36;${cartitem.price}</td>
-					<td style="text-align: center;">&#36;${cartitem.price * cartitem.qty}</td>
+					<td style="text-align: center;">&#8377;${cartitem.price}</td>
+					<td style="text-align: center;">&#8377;${cartitem.price * cartitem.qty}</td>
 					<c:if test="${cartitem.days<=0}">
 						<td style="text-align: center; color:#06e20a;">Delivered</td>
 					</c:if>

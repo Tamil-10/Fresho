@@ -7,7 +7,7 @@
   width: 80%;
   overflow: hidden;
   background: transparent;
-  color: white;
+  color: blue;
   font-size:16px;
   border-radius: 10px;
   border: 1px solid white;
@@ -76,7 +76,7 @@ a{
 color:red;
 }
 body {
-  background-image: url("http://www.intrawallpaper.com/static/images/HD-Desktop-Wallpapers44.jpg")!important;
+  background-image: url(resources/product/bg.jpg")!important;
 }
 h1 {
   font-weight: normal;

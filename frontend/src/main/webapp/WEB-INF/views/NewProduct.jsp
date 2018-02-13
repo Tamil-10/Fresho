@@ -7,7 +7,7 @@ body {
 	background-image: url("resources/images/bg/background.jpg");
 }
 label{
-	color: white;
+	color: blue;
 }
 </style>
   <script>

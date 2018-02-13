@@ -46,7 +46,7 @@ h5{
  <div class="col-sm-6">
 <h5 >Product Name: ${product.productName}</h5>
 <h5 >Product Description: ${product.productDescription}</h5>
-  <h5>Price: $ ${product.price}</h5>
+  <h5>Price: &#8377; ${product.price}</h5>
  <span style="color: red;"> ${message}</span>
 
   	<c:if test="${empty OutofStock}">

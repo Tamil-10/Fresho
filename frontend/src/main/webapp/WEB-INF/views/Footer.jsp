@@ -8,12 +8,10 @@
 
 <style type="text/css">
 
-i{
-
-padding-left: 80px;
-
-display: inline;
-
+	#footer{ 
+    height: 50px; 
+    background-color: white;
+     text-align: center;
 }
 
 /* .fa{
@@ -21,7 +19,7 @@ display: inline;
 margin-left: 10px;
 
 }  */
-footer {
+/* footer {
   background: #C5F936;
   padding: 0px 0;
   text-align: center;
@@ -38,12 +36,16 @@ footer a:first-child {
 }
 footer a:hover {
   color: white;
-}
+} */
 </style>
 </head>
 <body>
-
-
+<div class="row">
+		<div id="footer" class="col-sm-12">
+			<p class="copyright">Copyright &copy 2018 Fresho.,All Rights Reserved.</p>
+		</div>
+	</div>
+<!-- 
 <footer class="footer">
   <div class="container text-center">
   <small style="color:grey" class="copyright">Copyright &copy 2018 Fresho.,All Rights Reserved.</small>
@@ -52,6 +54,6 @@ footer a:hover {
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-google-plus"></i></a>
   </div>
-</footer>
+</footer> -->
 </body>
 </html>

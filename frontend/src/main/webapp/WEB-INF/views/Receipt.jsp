@@ -79,8 +79,8 @@ margin-bottom: 150px;
 						<tr>
 							<td class="col-md-9"><em>${cart.productName}</em></td>
 							<td class="col-md-1" style="text-align: center">${cart.qty}</td>
-							<td class="col-md-1 text-center">&#36;${cart.price}</td>
-							<td class="col-md-1 text-center">&#36;${cart.total}</td>
+							<td class="col-md-1 text-center">&#8377;${cart.price}</td>
+							<td class="col-md-1 text-center">&#8377;${cart.total}</td>
 						</tr>
 					</c:forEach>
 					<tr>
@@ -96,10 +96,10 @@ margin-bottom: 150px;
 						</td>
 						<td class="text-right">
 							<p>
-								<strong>&#36;${subtotal}</strong>
+								<strong><!-- &#36; -->&#8377;${subtotal}</strong>
 							</p>
 							<p>
-								<strong>&#36;${deliver}</strong>
+								<strong>&#8377;${deliver}</strong>
 							</p>
 						</td>
 					</tr>
@@ -110,7 +110,7 @@ margin-bottom: 150px;
 								<strong>Total: </strong>
 							</h4></td>
 						<td class="text-right text-success"><h4>
-								<strong>&#36;${subtotal + deliver}</strong>
+								<strong>&#8377;${subtotal + deliver}</strong>
 							</h4></td>
 					</tr>
 				</tbody>

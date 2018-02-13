@@ -38,7 +38,7 @@
 					</security:authorize>
 					</c:if>
 					<br><br>
-	<%-- 				<%@ include file="Footer.jsp"%> --%>
+					<%@ include file="Footer.jsp"%>
      
 </div>
   	 	
